@@ -1,0 +1,1 @@
+{"id":"813e79cd-64be-4bb6-99f2-f32d81749d86","name":"Task-taskform.frm","model":{"taskName":"Task","processId":"Delifery.Expressdelivery","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
