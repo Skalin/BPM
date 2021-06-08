@@ -21,6 +21,8 @@ public class Parcel implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Price")
 	private java.lang.Double price;
 
+	private java.lang.String courier;
+
 	public Parcel() {
 	}
 
@@ -72,15 +74,24 @@ public class Parcel implements java.io.Serializable {
 		this.price = price;
 	}
 
+	public java.lang.String getCourier() {
+		return this.courier;
+	}
+
+	public void setCourier(java.lang.String courier) {
+		this.courier = courier;
+	}
+
 	public Parcel(java.lang.Integer id, java.lang.String address,
 			java.lang.String name, java.util.Date dod, java.lang.Boolean cod,
-			java.lang.Double price) {
+			java.lang.Double price, java.lang.String courier) {
 		this.id = id;
 		this.address = address;
 		this.name = name;
 		this.dod = dod;
 		this.cod = cod;
 		this.price = price;
+		this.courier = courier;
 	}
 
 }
