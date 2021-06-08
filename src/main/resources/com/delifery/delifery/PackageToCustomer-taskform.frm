@@ -1,0 +1,1 @@
+{"id":"be04221b-aeef-4640-9432-33984c556608","name":"PackageToCustomer-taskform.frm","model":{"taskName":"PackageToCustomer","processId":"Delifery.Delivertohome","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
