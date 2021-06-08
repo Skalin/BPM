@@ -1,18 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="_1nh_oMhnEeuKnt1g2MfiSQ" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
-  <bpmn2:process id="Delifery.Deliverparcelstobox" drools:packageName="com.delifery.delifery" drools:version="1.0" drools:adHoc="false" name="Deliver parcels to box" isExecutable="true" processType="Public"/>
-  <bpmndi:BPMNDiagram id="_1nh_ochnEeuKnt1g2MfiSQ">
-    <bpmndi:BPMNPlane id="_1nh_oshnEeuKnt1g2MfiSQ" bpmnElement="Delifery.Deliverparcelstobox"/>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_ontBQMhpEeuKnt1g2MfiSQ" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_InMessageType" structureRef=""/>
+  <bpmn2:itemDefinition id="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_OutMessageType" structureRef=""/>
+  <bpmn2:message id="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_InMessage" itemRef="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_InMessageType"/>
+  <bpmn2:message id="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_OutMessage" itemRef="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_OutMessageType"/>
+  <bpmn2:interface id="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_ServiceInterface" name="DeliverParcelsToBox" implementationRef="DeliverParcelsToBox">
+    <bpmn2:operation id="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_ServiceOperation" name="" implementationRef="">
+      <bpmn2:inMessageRef>_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_InMessage</bpmn2:inMessageRef>
+      <bpmn2:outMessageRef>_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_OutMessage</bpmn2:outMessageRef>
+    </bpmn2:operation>
+  </bpmn2:interface>
+  <bpmn2:process id="Delifery.Deliverparcelstobox" drools:packageName="com.delifery.delifery" drools:version="1.0" drools:adHoc="false" name="Deliver parcels to box" isExecutable="true" processType="Public">
+    <bpmn2:sequenceFlow id="_E81D1D3B-456D-4D7B-B425-EE7FB1D65508" sourceRef="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A" targetRef="_C4B0DDB2-5A43-4DD8-935D-39C5C8EC297E">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_8648E4D1-A324-4579-AE7C-4B6C99AA7BB9" sourceRef="_E0413FE4-EAFF-4CD1-AD51-BA54EBFE5516" targetRef="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:startEvent id="_E0413FE4-EAFF-4CD1-AD51-BA54EBFE5516">
+      <bpmn2:outgoing>_8648E4D1-A324-4579-AE7C-4B6C99AA7BB9</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:endEvent id="_C4B0DDB2-5A43-4DD8-935D-39C5C8EC297E">
+      <bpmn2:incoming>_E81D1D3B-456D-4D7B-B425-EE7FB1D65508</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:serviceTask id="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A" drools:serviceimplementation="Java" drools:serviceinterface="DeliverParcelsToBox" drools:serviceoperation="" name="Deliver parcels to box" implementation="Java" operationRef="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A_ServiceOperation">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Deliver parcels to box]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_8648E4D1-A324-4579-AE7C-4B6C99AA7BB9</bpmn2:incoming>
+      <bpmn2:outgoing>_E81D1D3B-456D-4D7B-B425-EE7FB1D65508</bpmn2:outgoing>
+    </bpmn2:serviceTask>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_ontBQchpEeuKnt1g2MfiSQ">
+    <bpmndi:BPMNPlane id="_ontBQshpEeuKnt1g2MfiSQ" bpmnElement="Delifery.Deliverparcelstobox">
+      <bpmndi:BPMNShape id="shape__E2D469EB-AED5-4E6C-9C10-FEE6F447484A" bpmnElement="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A">
+        <dc:Bounds height="102.0" width="154.0" x="452.0" y="189.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__C4B0DDB2-5A43-4DD8-935D-39C5C8EC297E" bpmnElement="_C4B0DDB2-5A43-4DD8-935D-39C5C8EC297E">
+        <dc:Bounds height="56.0" width="56.0" x="723.0" y="212.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__E0413FE4-EAFF-4CD1-AD51-BA54EBFE5516" bpmnElement="_E0413FE4-EAFF-4CD1-AD51-BA54EBFE5516">
+        <dc:Bounds height="56.0" width="56.0" x="298.0" y="212.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge_shape__E0413FE4-EAFF-4CD1-AD51-BA54EBFE5516_to_shape__E2D469EB-AED5-4E6C-9C10-FEE6F447484A" bpmnElement="_8648E4D1-A324-4579-AE7C-4B6C99AA7BB9">
+        <di:waypoint xsi:type="dc:Point" x="326.0" y="240.0"/>
+        <di:waypoint xsi:type="dc:Point" x="452.0" y="240.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__E2D469EB-AED5-4E6C-9C10-FEE6F447484A_to_shape__C4B0DDB2-5A43-4DD8-935D-39C5C8EC297E" bpmnElement="_E81D1D3B-456D-4D7B-B425-EE7FB1D65508">
+        <di:waypoint xsi:type="dc:Point" x="529.0" y="240.0"/>
+        <di:waypoint xsi:type="dc:Point" x="723.0" y="240.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_1nh_o8hnEeuKnt1g2MfiSQ" type="BPSimData">
+  <bpmn2:relationship id="_ontBQ8hpEeuKnt1g2MfiSQ" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E2D469EB-AED5-4E6C-9C10-FEE6F447484A" id="_ontBRMhpEeuKnt1g2MfiSQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E0413FE4-EAFF-4CD1-AD51-BA54EBFE5516" id="_ontBRchpEeuKnt1g2MfiSQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_1nh_oMhnEeuKnt1g2MfiSQ</bpmn2:source>
-    <bpmn2:target>_1nh_oMhnEeuKnt1g2MfiSQ</bpmn2:target>
+    <bpmn2:source>_ontBQMhpEeuKnt1g2MfiSQ</bpmn2:source>
+    <bpmn2:target>_ontBQMhpEeuKnt1g2MfiSQ</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
