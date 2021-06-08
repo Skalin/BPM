@@ -8,37 +8,19 @@ public class Parcel implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private int id;
-	private short address;
-	private short name;
-	@org.kie.api.definition.type.Label(value = "Day of delivery")
+	private Integer id;
+	private String address;
+	private String name;
+	@org.kie.api.definition.type.Label("Day of delivery")
 	private java.util.Date dod;
 
+	@org.kie.api.definition.type.Label(value = "Cash on Delivery")
+	private java.lang.Boolean cod;
+
+	@org.kie.api.definition.type.Label(value = "Price")
+	private java.lang.Double price;
+
 	public Parcel() {
-	}
-
-	public int getId() {
-		return this.id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public short getAddress() {
-		return this.address;
-	}
-
-	public void setAddress(short address) {
-		this.address = address;
-	}
-
-	public short getName() {
-		return this.name;
-	}
-
-	public void setName(short name) {
-		this.name = name;
 	}
 
 	public java.util.Date getDod() {
@@ -49,11 +31,55 @@ public class Parcel implements java.io.Serializable {
 		this.dod = dod;
 	}
 
-	public Parcel(int id, short address, short name, java.util.Date dod) {
+	public java.lang.Integer getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Integer id) {
+		this.id = id;
+	}
+
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.Boolean getCod() {
+		return this.cod;
+	}
+
+	public void setCod(java.lang.Boolean cod) {
+		this.cod = cod;
+	}
+
+	public java.lang.Double getPrice() {
+		return this.price;
+	}
+
+	public void setPrice(java.lang.Double price) {
+		this.price = price;
+	}
+
+	public Parcel(java.lang.Integer id, java.lang.String address,
+			java.lang.String name, java.util.Date dod, java.lang.Boolean cod,
+			java.lang.Double price) {
 		this.id = id;
 		this.address = address;
 		this.name = name;
 		this.dod = dod;
+		this.cod = cod;
+		this.price = price;
 	}
 
 }
