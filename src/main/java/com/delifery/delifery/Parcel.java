@@ -23,6 +23,8 @@ public class Parcel implements java.io.Serializable {
 
 	private java.lang.String courier;
 
+	private java.lang.String currency;
+
 	public Parcel() {
 	}
 
@@ -82,9 +84,18 @@ public class Parcel implements java.io.Serializable {
 		this.courier = courier;
 	}
 
+	public java.lang.String getCurrency() {
+		return this.currency;
+	}
+
+	public void setCurrency(java.lang.String currency) {
+		this.currency = currency;
+	}
+
 	public Parcel(java.lang.Integer id, java.lang.String address,
 			java.lang.String name, java.util.Date dod, java.lang.Boolean cod,
-			java.lang.Double price, java.lang.String courier) {
+			java.lang.Double price, java.lang.String courier,
+			java.lang.String currency) {
 		this.id = id;
 		this.address = address;
 		this.name = name;
@@ -92,6 +103,7 @@ public class Parcel implements java.io.Serializable {
 		this.cod = cod;
 		this.price = price;
 		this.courier = courier;
+		this.currency = currency;
 	}
 
 }
