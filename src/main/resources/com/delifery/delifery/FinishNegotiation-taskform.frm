@@ -1,0 +1,1 @@
+{"id":"560b1ac1-a6a1-4d6a-8ceb-024ec4660b47","name":"FinishNegotiation-taskform.frm","model":{"taskName":"FinishNegotiation","processId":"Delifery.Visitpossiblepartner","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

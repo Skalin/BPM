@@ -1,0 +1,1 @@
+{"id":"6b8ac454-281e-405f-a8ef-0a963707f948","name":"SetNewDate-taskform.frm","model":{"taskName":"SetNewDate","processId":"Delifery.Visitpossiblepartner","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

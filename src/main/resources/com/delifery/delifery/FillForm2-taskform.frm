@@ -1,0 +1,1 @@
+{"id":"45f9d92a-e6a0-4712-bed1-b290ec206d55","name":"FillForm2-taskform.frm","model":{"taskName":"FillForm2","processId":"Delifery.Visitpossiblepartner","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
