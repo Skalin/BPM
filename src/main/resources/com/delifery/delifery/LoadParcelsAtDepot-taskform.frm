@@ -1,0 +1,1 @@
+{"id":"48b1ff17-6b90-44b6-8c37-109ada3e8bc3","name":"LoadParcelsAtDepot-taskform.frm","model":{"taskName":"LoadParcelsAtDepot","processId":"Delifery.Lastmiledeliverytodeliveryboxes","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
