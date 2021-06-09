@@ -1,0 +1,1 @@
+{"id":"cca57264-1248-42d3-9df2-bd310b0efc26","name":"DeliverGoodsCustomer-taskform.frm","model":{"taskName":"DeliverGoodsCustomer","processId":"Delifery.Express_Delivery","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

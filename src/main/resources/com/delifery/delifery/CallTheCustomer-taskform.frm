@@ -1,0 +1,1 @@
+{"id":"211c36c2-36d6-43dc-8cc8-8167699277f7","name":"CallTheCustomer-taskform.frm","model":{"taskName":"CallTheCustomer","processId":"Delifery.Express_Delivery","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

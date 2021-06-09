@@ -1,0 +1,1 @@
+{"id":"f5612c87-a5b5-4f09-b500-24f9b4f83189","name":"StoreGoodsDepo-taskform.frm","model":{"taskName":"StoreGoodsDepo","processId":"Delifery.Express_Delivery","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

@@ -1,0 +1,1 @@
+{"id":"f43db342-dfeb-4b84-871c-42cc092fe12d","name":"DeliverGoodsAlternative-taskform.frm","model":{"taskName":"DeliverGoodsAlternative","processId":"Delifery.Express_Delivery","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

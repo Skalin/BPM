@@ -1,0 +1,1 @@
+{"id":"cbf4bab1-17a4-4216-8899-5e25174836ca","name":"LoadGoodsAtStore-taskform.frm","model":{"taskName":"LoadGoodsAtStore","processId":"Delifery.Express_Delivery","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
