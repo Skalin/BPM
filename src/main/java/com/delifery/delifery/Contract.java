@@ -8,15 +8,15 @@ public class Contract implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Address")
+	@org.kie.api.definition.type.Label("Address")
 	private java.lang.String address;
-	@org.kie.api.definition.type.Label(value = "Managers Name")
+	@org.kie.api.definition.type.Label("ManagersName")
 	private java.lang.String managerName;
-	@org.kie.api.definition.type.Label(value = "Capacity")
+	@org.kie.api.definition.type.Label("Capacity")
 	private java.lang.Integer capacity;
-	@org.kie.api.definition.type.Label(value = "Partnership Type")
+	@org.kie.api.definition.type.Label("PartnershipType")
 	private java.lang.String partnershipType;
 
 	public Contract() {
